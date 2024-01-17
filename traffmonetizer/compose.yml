@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  tm:
+    image: traffmonetizer/cli_v2
+    command: start accept --token aIMhNjq+DjIPZdOYCZ/Jjrt2US1uD/uvQhQjEeom0Ig=
+    container_name: tm
+    restart: unless-stopped
