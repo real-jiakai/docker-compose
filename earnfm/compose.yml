@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  earnfm-client:
+    image: earnfm/earnfm-client:latest
+    container_name: earnfm-client
+    environment:
+      - EARNFM_TOKEN=903e9f9c-46b2-463b-9523-5abe9c917a9d
+    restart: always
