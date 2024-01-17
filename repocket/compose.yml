@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+   repocket:
+    image: repocket/repocket:latest
+    container_name: repocket
+    env_file:
+      - rp.env
+    restart: always
