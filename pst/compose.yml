@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  pst:
+    image: jokerwho/palworld-server-tool:latest
+    container_name: pst
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - /root/palworld/palworld/Pal/Saved:/game
+    environment:
+      WEB__PASSWORD: "your_web_password"
+      RCON__ADDRESS: "172.17.0.1:25575"
+      RCON__PASSWORD: "your_palword_admin_password"
+      SAVE__PATH: "/game"
+      SAVE__SYNC_INTERVAL: "120"
