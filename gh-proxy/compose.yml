@@ -1,0 +1,8 @@
+version: '3'
+services:
+  gh-proxy-py:
+    image: hunsh/gh-proxy-py:latest
+    container_name: "gh-proxy-py"
+    ports:
+      - "127.0.0.1:8998:80"
+    restart: always
