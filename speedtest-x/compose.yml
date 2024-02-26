@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  speedtest-x:
+    image: badapple9/speedtest-x
+    container_name: speedtest-x
+    ports:
+      - "127.0.0.1:9001:80"
+    restart: always
