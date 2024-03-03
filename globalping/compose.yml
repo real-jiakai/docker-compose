@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  globalping-probe:
+    image: ghcr.io/jsdelivr/globalping-probe
+    container_name: globalping-probe
+    restart: always
+    network_mode: host
