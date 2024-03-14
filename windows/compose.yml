@@ -1,0 +1,17 @@
+version: "3"
+services:
+  windows:
+    image: dockurr/windows
+    container_name: windows
+    ports:
+      - 127.0.0.1:8007:8006
+    devices:
+      - /dev/kvm
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - /root/windows/storage:/storage
+    environment:
+      VERSION: "tiny11"
+    stop_grace_period: 2m
+    restart: on-failure
