@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  mongodB:
+    image: mongo
+    container_name: fioradb
+    networks:
+      - fiora-network
+
+  redis:
+    image: redis
+    container_name: fioraredis
+    networks:
+      - fiora-network
+
+  fiora:
+    image: suisuijiang/fiora
+    container_name: fiora
+    ports:
+      - "127.0.0.1:9200:9200"
+    environment:
+      Database: mongodb://fioradb:27017/fiora
+      RedisHost: fioraredis
+    depends_on:
+      - mongodB
+      - redis
+    networks:
+      - fiora-network
+
+networks:
+  fiora-network:
+    name: fiora-network
