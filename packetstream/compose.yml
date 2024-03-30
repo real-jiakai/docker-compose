@@ -1,8 +1,0 @@
-version: '3.8'
-services:
-  psclient:
-    image: packetstream/psclient:latest
-    container_name: psclient
-    environment:
-      - CID=66Xf
-    restart: always

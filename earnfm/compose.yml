@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   earnfm-client:
     image: earnfm/earnfm-client:latest

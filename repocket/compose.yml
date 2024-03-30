@@ -1,4 +1,3 @@
-version: '3.8'
 services:
    repocket:
     image: repocket/repocket:latest

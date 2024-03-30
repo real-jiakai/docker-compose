@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   tm:
     image: traffmonetizer/cli_v2

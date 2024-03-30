@@ -1,4 +1,3 @@
-version: '3'
 services:
   gh-proxy-py:
     image: hunsh/gh-proxy-py:latest

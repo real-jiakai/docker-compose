@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   speedtest-x:
     image: badapple9/speedtest-x
