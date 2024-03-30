@@ -1,7 +1,4 @@
-version: '3'
-
-services:
-  looking-glass:
+services:  looking-glass:
     image: wikihostinc/looking-glass-server
     container_name: looking-glass
     restart: always
