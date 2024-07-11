@@ -1,0 +1,7 @@
+services:
+  fuclaude:
+    image: pengzhile/fuclaude:latest
+    container_name: Fuclaude
+    restart: always
+    ports:
+      - "127.0.0.1:45673:8181"
