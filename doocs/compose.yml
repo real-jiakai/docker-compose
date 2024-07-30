@@ -1,0 +1,6 @@
+services:
+  doocs-md:
+    image: doocs/md:latest
+    restart: always
+    ports:
+      - "127.0.0.1:8081:80"

@@ -1,0 +1,9 @@
+services:
+    filecodebox:
+        restart: always
+        ports:
+            - "127.0.0.1:12345:12345"
+        volumes:
+            - /opt/FileCodeBox/:/app/data
+        container_name: filecodebox
+        image: lanol/filecodebox:latest
